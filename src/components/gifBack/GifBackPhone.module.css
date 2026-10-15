@@ -1,0 +1,144 @@
+.gifBack {
+  color: var(--primary-text-color);
+  position: relative;
+  min-height: 400px;
+  height: 100%;
+  text-align: center;
+  padding: 40px 0;
+  border-bottom: 7px solid #e526e5;
+  background-color: rgb(45, 0, 18);
+}
+@media (max-width: 1600px) {
+  .gifBack {
+    border-bottom: 4px solid #e526e5;
+    min-height: 300px;
+  }
+}
+@media (max-width: 1024px) {
+  .gifBack {
+    border-bottom: 3px solid #e526e5;
+    padding: 30px 0;
+    min-height: 230px;
+  }
+}
+@media (max-width: 768px) {
+  .gifBack {
+    padding: 20px 0;
+    min-height: 200px;
+  }
+}
+@media (max-width: 490px) {
+  .gifBack {
+    min-height: 180px;
+  }
+}
+
+@media (max-width: 390px) {
+  .gifBack {
+    padding: 15px 0;
+    min-height: 150px;
+  }
+}
+
+.gifBack::before {
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.45;
+  z-index: 1;
+}
+.gifBackRukia::before {
+  background-image: url("/assets/gif/rukia-look.gif");
+}
+.gifBackByakuya::before {
+  background-image: url("/assets/gif/biakya.gif");
+}
+
+.gifBack__container {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+@media (max-width: 1600px) {
+  .gifBack__container {
+    gap: 10px;
+  }
+}
+@media (max-width: 1024px) {
+  .gifBack__container {
+    gap: 8px;
+  }
+}
+@media (max-width: 768px) {
+  .gifBack__container {
+    gap: 6px;
+  }
+}
+
+
+.gifCenter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.title {
+  font-size: var(--gif-title-size);
+  line-height: 1.4;
+  font-weight: 800;
+}
+
+
+.text {
+  font-size: var(--text-size);
+  line-height: 1.4;
+  font-weight: 560;
+  max-width: 1200px;
+  width: 100%;
+}
+@media (max-width: 1600px) {
+  .text {
+    max-width: 1100px;
+  }
+}
+@media (max-width: 1400px) {
+  .text {
+    max-width: 900px;
+  }
+}
+@media (max-width: 1200px) {
+  .text {
+    max-width: 800px;
+  }
+}
+@media (max-width: 1024px) {
+  .text {
+    max-width: 700px;
+  }
+}
+@media (max-width: 768px) {
+  .text {
+    max-width: 600px;
+  }
+}
+
+.textBottom {
+  font-size: var(--text-size);
+  line-height: 1.4;
+  font-weight: 550;
+}
+
+
+.titleCharacter {
+  composes: title;
+  max-width: 1000px;
+}

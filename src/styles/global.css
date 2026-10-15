@@ -1,0 +1,335 @@
+/* СБРОС СТИЛЕЙ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+button {
+  background-color: transparent;
+  color: inherit;
+  border: none;
+}
+ul,
+ol {
+  list-style: none;
+}
+input,
+textarea {
+  outline: none;
+  background-color: transparent;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Nunito", sans-serif;
+}
+
+button,
+input,
+textarea {
+  font-family: inherit;
+}
+
+/* ПЕРЕМЕННЫЕ */
+:root {
+  /* Цвет основого текста */
+  --primary-text-color: #fff;
+  /* Цвет основого фона */
+  --main-bg-color: #40176be0;
+  /* Контейнер */
+  --container-width: 1400px;
+  --container-padding: 16px;
+  /* Отступ секции */
+  --section-margin: 80px;
+  /* Цвет границ */
+  --main-border-color: #7d4a80;
+  /* Размер заголовков */
+  --title-size: 30px;
+  /* Размер заголовков у гивок */
+  --gif-title-size: 35px;
+  /* Размер обычного текста */
+  --text-size: 25px;
+}
+@media (max-width: 1600px) {
+  :root {
+    --container-width: 1200px;
+    --section-margin: 60px;
+    --gif-title-size: 32px;
+    --title-size: 25px;
+    --text-size: 20px;
+  }
+}
+@media (max-width: 1400px) {
+  :root {
+    --container-width: 1100px;
+    --section-margin: 40px;
+    --gif-title-size: 28px;
+    --text-size: 18px;
+    --title-size: 22px;
+  }
+}
+@media (max-width: 1200px) {
+  :root {
+    --container-width: 1000px;
+    --section-margin: 30px;
+  }
+}
+@media (max-width: 1024px) {
+  :root {
+    --container-width: 900px;
+    --gif-title-size: 25px;
+    --title-size: 20px;
+  }
+}
+@media (max-width: 768px) {
+  :root {
+    --container-width: 700px;
+    --container-padding: 12px;
+    --gif-title-size: 22px;
+    --text-size: 16px;
+    --title-size: 18px;
+    --section-margin: 25px;
+  }
+}
+@media (max-width: 490px) {
+  :root {
+    --container-width: 400px;
+    --gif-title-size: 20px;
+    --text-size: 15px;
+    --title-size: 17px;
+  }
+}
+@media (max-width: 390px) {
+  :root {
+    --gif-title-size: 18px;
+    --text-size: 14px;
+    --title-size: 16px;
+  }
+}
+
+/* КАСТОМ СКРОЛЛА */
+/* Ширина и фоновый цвет полосы прокрутки */
+::-webkit-scrollbar {
+  width: 8px;
+  background-color: #210044;
+}
+/* Цвет ползунка */
+::-webkit-scrollbar-thumb {
+  background: var(--primary-text-color);
+  border-radius: 6px;
+}
+/* Цвет ползунка при наведении */
+::-webkit-scrollbar-thumb:hover {
+  background: #c4b1b1;
+}
+@font-face {
+  font-family: "Nunito";
+  src:
+    url("/assets/fonts/Nunito-Black.ttf") format("truetype"),
+    url("/assets/fonts/Nunito-Bold.ttf") format("truetype"),
+    url("/assets/fonts/Nunito-ExtraBold.ttf") format("truetype");
+}
+/* ШАБЛОНЫ */
+/* flex - пространство */
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #1d061f, #542657, #1d061f);
+}
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper__section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+}
+/* шаблоны */
+.container {
+  max-width: var(--container-width);
+  width: 100%;
+  padding: 0 var(--container-padding);
+  margin: 0 auto;
+}
+@media (max-width: 490px) {
+  .container {
+    max-width: 100%;
+    padding: 0 20px;
+  }
+}
+@media (max-width: 390px) {
+  .container {
+    padding: 0 15px;
+  }
+}
+@media (max-width: 350px) {
+  .container {
+    padding: 0 10px;
+  }
+}
+.section {
+  margin-bottom: var(--section-margin);
+}
+.section__first {
+  padding-top: var(--section-margin);
+}
+.section:last-child {
+  margin: 0;
+  padding-bottom: var(--section-margin);
+}
+
+/*Стили для карточек секций*/
+/* стили у анонсов */
+.article__card {
+  background-color: var(--main-bg-color);
+  border-radius: 30px;
+  border: 7px solid var(--main-border-color);
+  padding: 30px 20px;
+}
+@media (max-width: 1600px) {
+  .article__card {
+    border-radius: 20px;
+    border: 5px solid var(--main-border-color);
+    padding: 25px 15px;
+  }
+}
+@media (max-width: 1200px) {
+  .article__card {
+    border-radius: 15px;
+    padding: 20px 15px;
+    border: 4px solid var(--main-border-color);
+  }
+}
+@media (max-width: 768px) {
+  .article__card {
+    padding: 17px 15px;
+  }
+}
+@media (max-width: 490px) {
+  .article__card {
+    padding: 15px;
+    border-radius: 12px;
+  }
+}
+@media (max-width: 390px) {
+  .article__card {
+    padding: 10px;
+  }
+}
+
+.article__title {
+  font-size: var(--title-size);
+  color: var(--primary-text-color);
+  text-align: center;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+/* Фоны страниц */
+/* Все другие страницы */
+.main__phone {
+  background: url("/assets/img/shinigami/ichigo-horn.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+  z-index: 1;
+}
+
+/* стили текста в модалке */
+.paragraph {
+  color: var(--primary-text-color);
+  font-size: var(--text-size);
+  line-height: 1.6;
+  font-weight: 500;
+  text-align: justify;
+}
+@media (max-width: 490px) {
+  .paragraph {
+    font-size: 14px;
+  }
+}
+@media (max-width: 390px) {
+  .paragraph {
+    font-size: 13px;
+  }
+}
+
+/* CТИЛИ ДЛЯ LOADER */
+.loader-background {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 5;
+  background: rgba(0, 0, 0, 0.3);
+  inset: 0px;
+}
+.custom-loader {
+  width: 90px;
+  height: 90px;
+  display: grid;
+  border-radius: 50%;
+  -webkit-mask: radial-gradient(farthest-side, #0000 40%, #000 41%);
+  background:
+    linear-gradient(0deg, #766df480 50%, #766df4ff 0) center/4px 100%,
+    linear-gradient(90deg, #766df440 50%, #766df4bf 0) center/100% 4px;
+  background-repeat: no-repeat;
+  animation: s3 1s infinite steps(12);
+}
+@media (max-width: 1600px) {
+  .custom-loader {
+    width: 80px;
+    height: 80px;
+  }
+}
+@media (max-width: 1400px) {
+  .custom-loader {
+    width: 70px;
+    height: 70px;
+  }
+}
+@media (max-width: 1024px) {
+  .custom-loader {
+    width: 60px;
+    height: 60px;
+  }
+}
+@media (max-width: 768px) {
+  .custom-loader {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+.custom-loader::before,
+.custom-loader::after {
+  content: "";
+  grid-area: 1/1;
+  border-radius: 50%;
+  background: inherit;
+  opacity: 0.915;
+  transform: rotate(30deg);
+}
+
+.custom-loader::after {
+  opacity: 0.83;
+  transform: rotate(60deg);
+}
+
+@keyframes s3 {
+  100% {
+    transform: rotate(1turn);
+  }
+}

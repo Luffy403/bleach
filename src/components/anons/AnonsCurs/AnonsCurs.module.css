@@ -1,0 +1,39 @@
+.curs__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--primary-text-color);
+  gap: 20px;
+  margin-top: 25px;
+}
+@media (max-width: 1600px) {
+  .curs__list {
+    gap: 15px;
+    margin-top: 20px;
+  }
+}
+@media (max-width: 1400px) {
+  .curs__list {
+    gap: 13px;
+    margin-top: 18px;
+  }
+}
+@media (max-width: 1200px) {
+  .curs__list {
+    gap: 11px;
+    margin-top: 15px;
+  }
+}
+@media (max-width: 768px) {
+  .curs__list {
+    gap: 8px;
+    margin-top: 12px;
+  }
+}
+
+.curs {
+  font-size: var(--text-size);
+  font-weight: 550;
+  text-align: center;
+}
+

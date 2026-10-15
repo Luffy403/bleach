@@ -1,0 +1,17 @@
+.paragraph {
+  color: var(--primary-text-color);
+  font-size: var(--text-size);
+  line-height: 1.6;
+  font-weight: 500;
+  text-align: justify;
+}
+@media (max-width: 490px) {
+  .paragraph {
+    font-size: 14px;
+  }
+}
+@media (max-width: 390px) {
+  .paragraph {
+    font-size: 13px;
+  }
+}

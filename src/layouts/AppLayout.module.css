@@ -1,0 +1,160 @@
+/* ШАПКА */
+.header {
+  padding: 20px 0;
+  background-color: #0d0210;
+  position: relative;
+}
+@media (max-width: 1600px) {
+  .header {
+    padding: 15px 0;
+  }
+}
+@media (max-width: 1024px) {
+  .header {
+    padding: 13px 0;
+  }
+}
+@media (max-width: 768px) {
+  .header {
+    padding: 10px 0;
+  }
+}
+
+.header__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 490px) {
+  .header__container {
+    max-width: 100%;
+  }
+}
+
+.link__logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  max-width: 199px;
+  width: 100%;
+  height: 50px;
+  transition: all 0.4s ease;
+}
+@media (max-width: 1600px) {
+  .logo {
+    max-width: 190px;
+    height: 45px;
+  }
+}
+@media (max-width: 1024px) {
+  .logo {
+    max-width: 170px;
+    height: 40px;
+  }
+}
+@media (max-width: 768px) {
+  .logo {
+    max-width: 150px;
+    height: 37px;
+  }
+}
+@media (max-width: 490px) {
+  .logo {
+    max-width: 140px;
+    height: 35px;
+  }
+}
+@media (max-width: 390px) {
+  .logo {
+    max-width: 125px;
+    height: 32px;
+  }
+}
+.logo:hover {
+  transform: scale(1.02);
+}
+
+/* ПОДВАЛ */
+.footer {
+  padding: 20px 0;
+  background-color: #0d0210;
+}
+@media (max-width: 768px) {
+  .footer {
+    padding: 15px 0;
+  }
+}
+@media (max-width: 490px) {
+  .footer {
+    padding: 12px 0;
+  }
+}
+
+.footer__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__links {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+@media (max-width: 1400px) {
+  .footer__links {
+    gap: 50px;
+  }
+}
+@media (max-width: 768px) {
+  .footer__links {
+    gap: 40px;
+  }
+}
+@media (max-width: 490px) {
+  .footer__links {
+    gap: 30px;
+  }
+}
+@media (max-width: 390px) {
+  .footer__links {
+    gap: 25px;
+  }
+}
+
+
+.social__link {
+  color: #c66ac8;
+  transition: all 0.3s ease;
+}
+@media (max-width: 1600px) {
+  .social__link {
+    width: 45px;
+    height: 45px;
+  }
+}
+@media (max-width: 1400px) {
+  .social__link {
+    width: 40px;
+    height: 40px;
+  }
+}
+@media (max-width: 1200px) {
+  .social__link {
+    width: 35px;
+    height: 35px;
+  }
+}
+@media (max-width: 490px) {
+  .social__link {
+    width: 30px;
+    height: 30px;
+  }
+}
+.social__link:hover {
+  color: #cb92da;
+  transform: scale(1.05);
+}

@@ -1,0 +1,262 @@
+.character__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 35px;
+}
+@media (max-width: 1600px) {
+  .character__item {
+    gap: 30px;
+  }
+}
+@media (max-width: 1400px) {
+  .character__item {
+    gap: 25px;
+  }
+}
+@media (max-width: 1024px) {
+  .character__item {
+    gap: 20px;
+  }
+}
+@media (max-width: 490px) {
+  .character__item {
+    gap: 15px;
+  }
+}
+@media (max-width: 390px) {
+  .character__item {
+    gap: 12px;
+  }
+}
+
+.character__avatar {
+  max-width: 300px;
+  width: 100%;
+  height: 300px;
+  border-radius: 50%;
+  border: 4px solid black;
+  transition: all 0.3s ease;
+}
+@media (max-width: 1600px) {
+  .character__avatar {
+    max-width: 280px;
+    height: 280px;
+    border: 3px solid black;
+  }
+}
+@media (max-width: 1400px) {
+  .character__avatar {
+    max-width: 250px;
+    height: 250px;
+  }
+}
+@media (max-width: 1024px) {
+  .character__avatar {
+    max-width: 220px;
+    height: 220px;
+  }
+}
+@media (max-width: 768px) {
+  .character__avatar {
+    max-width: 200px;
+    height: 200px;
+  }
+}
+@media (max-width: 490px) {
+  .character__avatar {
+    max-width: 180px;
+    height: 180px;
+    border: 2px solid black;
+  }
+}
+@media (max-width: 390px) {
+  .character__avatar {
+    max-width: 150px;
+    height: 150px;
+  }
+}
+
+.character__avatar:hover {
+  border: 4px solid #7d4a80;
+}
+@media (max-width: 1600px) {
+  .character__avatar:hover {
+    border: 3px solid #7d4a80;
+  }
+}
+@media (max-width: 490px) {
+  .character__avatar:hover {
+    border: 2px solid #7d4a80;
+  }
+}
+
+.description {
+  max-width: 900px;
+  width: 100%;
+  color: var(--primary-text-color);
+  font-size: var(--text-size);
+  line-height: 1.8;
+  text-align: justify;
+  font-weight: 600;
+}
+@media (max-width: 1600px) {
+  .description {
+    max-width: 800px;
+  }
+}
+@media (max-width: 1400px) {
+  .description {
+    max-width: 700px;
+  }
+}
+@media (max-width: 1200px) {
+  .description {
+    max-width: 600px;
+  }
+}
+@media (max-width: 1024px) {
+  .description {
+    max-width: 550px;
+  }
+}
+@media (max-width: 768px) {
+  .description {
+    max-width: 500px;
+  }
+}
+@media (max-width: 600px) {
+  .description {
+    max-width: 400px;
+  }
+}
+@media (max-width: 490px) {
+  .description {
+    max-width: 290px;
+  }
+}
+@media (max-width: 390px) {
+  .description {
+    max-width: 250px;
+  }
+}
+@media (max-width: 350px) {
+  .description {
+    font-size: 13px;
+  }
+}
+
+.video {
+  border-radius: 45px;
+  max-width: 400px;
+  width: 100%;
+  border: 5px solid #7d4a80;
+}
+@media (max-width: 1600px) {
+  .video {
+    max-width: 350px;
+    border: 4px solid #7d4a80;
+  }
+}
+@media (max-width: 1400px) {
+  .video {
+    max-width: 320px;
+  }
+}
+@media (max-width: 1024px) {
+  .video {
+    max-width: 300px;
+  }
+}
+@media (max-width: 768px) {
+  .video {
+    max-width: 280px;
+    border-radius: 40px;
+  }
+}
+@media (max-width: 490px) {
+  .video {
+    max-width: 250px;
+    border-radius: 40px;
+  }
+}
+@media (max-width: 390px) {
+  .video {
+    max-width: 220px;
+    border-radius: 35px;
+  }
+}
+@media (max-width: 350px) {
+  .video {
+    max-width: 200px;
+    border-radius: 30px;
+  }
+}
+
+.no__edit {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 4px solid var(--main-border-color);
+  height: 150px;
+  width: 280px;
+  border-radius: 20px;
+  background-color: #1f0639e0;
+}
+@media (max-width: 1600px) {
+  .no__edit {
+    height: 130px;
+    width: 250px;
+  }
+}
+@media (max-width: 1400px) {
+  .no__edit {
+    height: 110px;
+    width: 230px;
+    padding: 15px;
+    border-radius: 17px;
+  }
+}
+@media (max-width: 1200px) {
+  .no__edit {
+    border: 3px solid var(--main-border-color);
+    height: 100px;
+    width: 210px;
+  }
+}
+@media (max-width: 1024px) {
+  .no__edit {
+    height: 90px;
+    width: 200px;
+  }
+}
+@media (max-width: 768px) {
+  .no__edit {
+    padding: 12px;
+    border-radius: 15px;
+    height: 80px;
+    width: 190px;
+  }
+}
+@media (max-width: 490px) {
+  .no__edit {
+    height: 70px;
+    width: 180px;
+    padding: 10px;
+  }
+}
+@media (max-width: 390px) {
+  .no__edit {
+    height: 60px;
+    width: 170px;
+    padding: 7px;
+  }
+}
+
+.no__edit__title {
+  font-size: var(--text-size);
+  text-align: center;
+  color: var(--primary-text-color);
+}

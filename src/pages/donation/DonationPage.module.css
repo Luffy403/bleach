@@ -1,0 +1,227 @@
+.donation__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  text-align: center;
+}
+@media (max-width: 1600px) {
+  .donation__card {
+    gap: 20px;
+  }
+}
+@media (max-width: 1400px) {
+  .donation__card {
+    gap: 17px;
+  }
+}
+@media (max-width: 1024px) {
+  .donation__card {
+    gap: 15px;
+  }
+}
+@media (max-width: 768px) {
+  .donation__card {
+    gap: 10px;
+  }
+}
+
+
+.donation__text {
+  color: var(--primary-text-color);
+  font-size: var(--text-size);
+  line-height: 1.6;
+  font-weight: 500;
+  max-width: 1100px;
+  width: 100%;
+}
+@media (max-width: 1600px) {
+  .donation__text {
+    line-height: 1.5;
+    max-width: 900px;
+  }
+}
+@media (max-width: 1400px) {
+  .donation__text {
+    max-width: 800px;
+  }
+}
+@media (max-width: 1024px) {
+  .donation__text {
+    max-width: 650px;
+  }
+}
+@media (max-width: 768px) {
+  .donation__text {
+    max-width: 500px;
+  }
+}
+@media (max-width: 590px) {
+  .donation__text {
+    max-width: 400px;
+  }
+}
+@media (max-width: 490px) {
+  .donation__text {
+    max-width: 300px;
+  }
+}
+@media (max-width: 390px) {
+  .donation__text {
+    max-width: 250px;
+  }
+}
+
+
+.donation__gif {
+  border-radius: 25px;
+  max-width: 700px;
+  width: 100%;
+  border: 2px solid var(--main-border-color);
+  box-shadow: 4px 4px 15px 5px #ffcfcf;
+}
+@media (max-width: 1600px) {
+  .donation__gif {
+    border-radius: 22px;
+    max-width: 550px;
+    box-shadow: 3px 3px 12px 4px #ffcfcf;
+  }
+}
+@media (max-width: 1400px) {
+  .donation__gif {
+    max-width: 530px;
+    box-shadow: 3px 3px 12px 3px #ffcfcf;
+  }
+}
+@media (max-width: 1024px) {
+  .donation__gif {
+    max-width: 450px;
+    box-shadow: 2px 2px 12px 2px #ffcfcf;
+  }
+}
+@media (max-width: 768px) {
+  .donation__gif {
+    max-width: 350px;
+    box-shadow: 1px 1px 9px 1px #ffcfcf;
+    border-radius: 18px;
+  }
+}
+@media (max-width: 590px) {
+  .donation__gif {
+    max-width: 300px;
+  }
+}
+@media (max-width: 490px) {
+  .donation__gif {
+    max-width: 250px;
+  }
+}
+@media (max-width: 390px) {
+  .donation__gif {
+    max-width: 200px;
+  }
+}
+
+
+.donation__btn {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 15px 20px;
+  background: linear-gradient(135deg, #7d4a80, #a94eae);
+  color: var(--primary-text-color);
+  font-size: var(--text-size);
+  font-weight: 700;
+  border-radius: 15px;
+  transition: all 0.4s ease;
+  box-shadow: 0 4px 15px rgba(125, 74, 128, 0.4);
+  margin-top: 15px;
+}
+@media (max-width: 1600px) {
+  .donation__btn {
+    padding: 12px 15px;
+    gap: 17px;
+    margin-top: 13px;
+  }
+}
+@media (max-width: 1400px) {
+  .donation__btn {
+    gap: 15px;
+  }
+}
+@media (max-width: 1200px) {
+  .donation__btn {
+    gap: 12px;
+    margin-top: 10px;
+  }
+}
+@media (max-width: 768px) {
+  .donation__btn {
+    padding: 10px 12px;
+  }
+}
+@media (max-width: 590px) {
+  .donation__btn {
+    border-radius: 12px;
+    margin-top: 8px;
+    gap: 10px;
+  }
+}
+@media (max-width: 490px) {
+  .donation__btn {
+    margin-top: 6px;
+    padding: 8px 10px;
+  }
+}
+
+
+.donation__btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 25px rgba(125, 74, 128, 0.6);
+  background: linear-gradient(135deg, #a94eae, #c95ccf);
+}
+
+@media (max-width: 1600px) {
+  .donation__icon {
+    width: 35px;
+    height: 35px;
+  }
+}
+@media (max-width: 1400px) {
+  .donation__icon {
+    width: 30px;
+    height: 30px;
+  }
+}
+@media (max-width: 768px) {
+  .donation__icon {
+    width: 25px;
+    height: 25px;
+  }
+}
+@media (max-width: 590px) {
+  .donation__icon {
+    width: 22px;
+    height: 22px;
+  }
+}
+@media (max-width: 490px) {
+  .donation__icon {
+    width: 20px;
+    height: 20px;
+  }
+}
+@media (max-width: 390px) {
+  .donation__icon {
+    width: 17px;
+    height: 17px;
+  }
+}
+
+
+.donation__thanks {
+  color: var(--primary-text-color);
+  font-size: var(--text-size);
+  font-weight: 600;
+  opacity: 0.8;
+}

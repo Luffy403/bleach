@@ -1,0 +1,112 @@
+.btnTop {
+  position: fixed;
+  z-index: 40;
+  right: 40px;
+  bottom: 40px;
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  background: linear-gradient(45deg, #1d0ac6, #5d4cfa);
+  color: #fff;
+  cursor: pointer;
+  animation-name: btnTop;
+  animation-duration: 0.5s;
+  animation-direction: alternate;
+  transition: all 0.5s ease;
+}
+@media (max-width: 1600px) {
+  .btnTop {
+    width: 55px;
+    height: 55px;
+    right: 35px;
+    bottom: 35px;
+  }
+}
+@media (max-width: 1400px) {
+  .btnTop {
+    width: 53px;
+    height: 53px;
+    right: 30px;
+    bottom: 33px;
+  }
+}
+@media (max-width: 1024px) {
+  .btnTop {
+    width: 50px;
+    height: 50px;
+    right: 25px;
+    bottom: 30px;
+  }
+}
+@media (max-width: 768px) {
+  .btnTop {
+    width: 45px;
+    height: 45px;
+    right: 20px;
+    bottom: 25px;
+  }
+}
+@media (max-width: 390px) {
+  .btnTop {
+    width: 43px;
+    height: 43px;
+    right: 15px;
+  }
+}
+.btnTop:hover {
+  border: 2px solid var(--primary-text-color);
+  transform: translateY(-4px);
+  background: linear-gradient(45deg, #412cfb, #5d4cfa);
+}
+@keyframes btnTop {
+  from {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.75;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.top_icon {
+  width: 50px;
+  height: 50px;
+}
+@media (max-width: 1600px) {
+  .top_icon {
+    width: 40px;
+    height: 40px;
+  }
+}
+@media (max-width: 1400px) {
+  .top_icon {
+    width: 37px;
+    height: 37px;
+  }
+}
+@media (max-width: 1024px) {
+  .top_icon {
+    width: 34px;
+    height: 34px;
+  }
+}
+@media (max-width: 768px) {
+  .top_icon {
+    width: 30px;
+    height: 30px;
+  }
+}
+@media (max-width: 390px) {
+  .top_icon {
+    width: 27px;
+    height: 27px;
+  }
+}

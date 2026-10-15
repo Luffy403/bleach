@@ -1,0 +1,30 @@
+.prevBtn__box {
+  display: flex;
+  justify-content: center;
+}
+.prevBtn {
+  padding: 15px 20px;
+  color: var(--primary-text-color);
+  font-size: var(--text-size);
+  font-weight: 550;
+  background-color: var(--main-bg-color);
+  border-radius: 15px;
+  transition: all 0.3s ease;
+}
+@media (max-width: 1600px) {
+  .prevBtn {
+    padding: 10px 15px;
+    border-radius: 14px;
+  }
+}
+@media (max-width: 768px) {
+  .prevBtn {
+    padding: 10px 12px;
+    border-radius: 12px;
+  }
+}
+
+.prevBtn:hover {
+  background-color: #2c0a4fe0;
+  transform: scale(1.04);
+}

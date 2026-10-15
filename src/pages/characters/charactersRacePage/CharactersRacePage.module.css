@@ -1,0 +1,312 @@
+.characters__title {
+  text-align: center;
+  color: var(--primary-text-color);
+  font-size: var(--title-size);
+  margin-bottom: 25px;
+}
+@media (max-width: 490px) {
+  .characters__title {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 390px) {
+  .characters__title {
+    margin-bottom: 15px;
+  }
+}
+
+/* Табы фракций */
+.factions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+@media (max-width: 1024px) {
+  .factions {
+    gap: 12px;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 768px) {
+  .factions {
+    gap: 10px;
+    margin-bottom: 25px;
+  }
+}
+@media (max-width: 490px) {
+  .factions {
+    gap: 8px;
+    margin-bottom: 20px;
+  }
+}
+
+.faction__btn {
+  color: var(--primary-text-color);
+  background-color: #2d0b2f;
+  padding: 12px 20px;
+  border-radius: 12px;
+  font-size: var(--text-size);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+@media (max-width: 1024px) {
+  .faction__btn {
+    padding: 10px 17px;
+    border-radius: 10px;
+  }
+}
+@media (max-width: 768px) {
+  .faction__btn {
+    padding: 9px 15px;
+    font-size: 14px;
+  }
+}
+@media (max-width: 490px) {
+  .faction__btn {
+    padding: 7px 12px;
+    font-size: 13px;
+    border-radius: 8px;
+  }
+}
+@media (max-width: 390px) {
+  .faction__btn {
+    padding: 6px 10px;
+    font-size: 12px;
+  }
+}
+
+.faction__btn:hover {
+  background-color: #441446;
+  transform: scale(1.03);
+}
+
+.faction__btn_active {
+  background-color: #7d4a80;
+  border: 2px solid #c66ac8;
+  transform: scale(1.05);
+}
+
+.faction__btn_active:hover {
+  background-color: #9a699c;
+}
+
+
+.characters__content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+  margin: 0px 40px;
+}
+@media (max-width: 1600px) {
+  .characters__content {
+    gap: 40px;
+    margin: 0px 30px;
+  }
+}
+@media (max-width: 1400px) {
+  .characters__content {
+    gap: 35px;
+    margin: 0px 20px;
+  }
+}
+@media (max-width: 1200px) {
+  .characters__content {
+    margin: 0px 15px;
+  }
+}
+@media (max-width: 1024px) {
+  .characters__content {
+    margin: 0px 10px;
+    gap: 30px;
+  }
+}
+@media (max-width: 768px) {
+  .characters__content {
+    margin: 0px 5px;
+    gap: 25px;
+  }
+}
+@media (max-width: 600px) {
+  .characters__content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 490px) {
+  .characters__content {
+    grid-template-columns: repeat(1, 1fr);
+    margin: 0;
+  }
+}
+@media (max-width: 390px) {
+  .characters__content {
+    gap: 20px;
+  }
+}
+
+.character__item {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  align-items: center;
+}
+@media (max-width: 1600px) {
+  .character__item {
+    gap: 20px;
+  }
+}
+@media (max-width: 1024px) {
+  .character__item {
+    gap: 15px;
+  }
+}
+@media (max-width: 490px) {
+  .character__item {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.character__avatar {
+  max-width: 280px;
+  width: 100%;
+  height: 280px;
+  border-radius: 50%;
+  border: 4px solid black;
+  transition: all 0.3s ease;
+}
+@media (max-width: 1600px) {
+  .character__avatar {
+    max-width: 220px;
+    height: 220px;
+    border: 3px solid black;
+  }
+}
+@media (max-width: 1400px) {
+  .character__avatar {
+    max-width: 210px;
+    height: 210px;
+  }
+}
+@media (max-width: 1200px) {
+  .character__avatar {
+    max-width: 200px;
+    height: 200px;
+  }
+}
+@media (max-width: 1024px) {
+  .character__avatar {
+    max-width: 180px;
+    height: 180px;
+  }
+}
+@media (max-width: 768px) {
+  .character__avatar {
+    max-width: 150px;
+    height: 150px;
+  }
+}
+@media (max-width: 600px) {
+  .character__avatar {
+    max-width: 180px;
+    height: 180px;
+  }
+}
+@media (max-width: 490px) {
+  .character__avatar {
+    max-width: 110px;
+    height: 110px;
+    border: 2px solid black;
+  }
+}
+@media (max-width: 390px) {
+  .character__avatar {
+    max-width: 100px;
+    height: 100px;
+  }
+}
+@media (max-width: 350px) {
+  .character__avatar {
+    max-width: 95px;
+    height: 95px;
+  }
+}
+
+.character__avatar:hover {
+  border: 4px solid #7d4a80;
+}
+@media (max-width: 1600px) {
+  .character__avatar:hover {
+    border: 3px solid #c95ccf;
+  }
+}
+@media (max-width: 490px) {
+  .character__avatar:hover {
+    border: 2px solid #c95ccf;
+  }
+}
+
+.character__name {
+  font-size: var(--text-size);
+  font-weight: 750;
+  text-align: center;
+  color: var(--primary-text-color);
+  overflow-wrap: break-word;
+}
+@media (max-width: 490px) {
+  .character__name {
+    max-width: 120px;
+    width: 100%;
+    font-size: 13px;
+  }
+}
+@media (max-width: 390px) {
+  .character__name {
+    font-size: 12px;
+  }
+}
+@media (max-width: 350px) {
+  .character__name {
+    font-size: 11px;
+    max-width: 70px;
+  }
+}
+
+.character__btn {
+  font-size: var(--text-size);
+  color: var(--primary-text-color);
+  background-color: #7d4a80;
+  padding: 13px 18px;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+}
+@media (max-width: 1600px) {
+  .character__btn {
+    padding: 10px 15px;
+    border-radius: 13px;
+  }
+}
+@media (max-width: 1024px) {
+  .character__btn {
+    padding: 8px 13px;
+    border-radius: 12px;
+  }
+}
+@media (max-width: 490px) {
+  .character__btn {
+    font-size: 12px;
+    padding: 8px;
+  }
+}
+@media (max-width: 490px) {
+  .character__btn {
+    font-size: 11px;
+  }
+}
+.character__btn:hover {
+  transform: scale(1.05);
+  background-color: #9a699c;
+}

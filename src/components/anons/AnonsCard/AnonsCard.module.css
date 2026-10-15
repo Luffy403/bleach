@@ -1,0 +1,99 @@
+.anons__text {
+  color: var(--primary-text-color);
+  font-size: var(--text-size);
+  padding: 20px 0;
+  line-height: 1.6;
+}
+@media (max-width: 1600px) {
+  .anons__text {
+    padding: 15px 0;
+  }
+}
+@media (max-width: 1200px) {
+  .anons__text {
+    padding: 12px 0;
+  }
+}
+@media (max-width: 490px) {
+  .anons__text {
+    padding: 10px 0;
+  }
+}
+
+.image_grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  padding: 0 5px;
+}
+@media (max-width: 1600px) {
+  .image_grid {
+    gap: 25px;
+  }
+}
+@media (max-width: 1400px) {
+  .image_grid {
+    gap: 20px;
+  }
+}
+@media (max-width: 1024px) {
+  .image_grid {
+    gap: 18px;
+  }
+}
+@media (max-width: 768px) {
+  .image_grid {
+    gap: 15px;
+    padding: 0 3px;
+  }
+}
+@media (max-width: 490px) {
+  .image_grid {
+    gap: 10px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.anons__image {
+  width: 100%;
+  border-radius: 20px;
+  vertical-align: middle;
+  object-fit: cover;
+  height: 300px;
+  border: 2px solid var(--primary-text-color);
+}
+@media (max-width: 1600px) {
+  .anons__image {
+    border-radius: 15px;
+    height: 270px;
+  }
+}
+@media (max-width: 1200px) {
+  .anons__image {
+    border-radius: 12px;
+    height: 250px;
+  }
+}
+@media (max-width: 1024px) {
+  .anons__image {
+    border-radius: 10px;
+    height: 230px;
+  }
+}
+@media (max-width: 768px) {
+  .anons__image {
+    height: 200px;
+  }
+}
+@media (max-width: 490px) {
+  .anons__image {
+    border-radius: 20px;
+    height: 180px;
+  }
+}
+@media (max-width: 390px) {
+  .anons__image {
+    border-radius: 18px;
+    height: 160px;
+  }
+}
